@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_Test2.-917187655.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Test2" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="VolunteerController.cs" t="Include" />
+          <e p="WeatherForecastController.cs" t="Include" />
+        </e>
+        <e p="DTOs" t="Include">
+          <e p="AssignPetResponse.cs" t="Include" />
+          <e p="PetListResponse.cs" t="Include" />
+          <e p="PetResponse.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20200619103323_MigrateTables.cs" t="Include" />
+          <e p="20200619103323_MigrateTables.Designer.cs" t="Include" />
+          <e p="20200619103953_MigrateTables2.cs" t="Include" />
+          <e p="20200619103953_MigrateTables2.Designer.cs" t="Include" />
+          <e p="PetStoreDbContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="BreedType.cs" t="Include" />
+          <e p="Pet.cs" t="Include" />
+          <e p="PetStoreDbContext.cs" t="Include" />
+          <e p="Volunteer.cs" t="Include" />
+          <e p="Volunteer_Pet.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Test2.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="IPetStoreDbService.cs" t="Include" />
+          <e p="PetStoreDbService.cs" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="Test2.csproj" t="IncludeRecursive" />
+        <e p="WeatherForecast.cs" t="Include" />
+      </e>
+      <e p="Test2.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
