@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Mail;
 using Microsoft.AspNetCore.Mvc;
 using Test2.DTOs;
+using Test2.DTOs.Requests;
 using Test2.Models;
 
 namespace Test2.Services
@@ -120,9 +121,9 @@ namespace Test2.Services
             }
         }
 
-        public IActionResult AssignPet(int id, int idPet)
+        public IActionResult AssignPet(int id, PetRequest request)
         {
-            if (idPet == null)
+            if (request.IdPet == null)
             {
                 throw new Exception("Pet ID is not provided!");
             }
@@ -147,7 +148,7 @@ namespace Test2.Services
                 var volunteer_pet = new Volunteer_Pet()
                 {
                     DateAccepted = DateTime.Now,
-                    IdPet = idPet,
+                    IdPet = request.IdPet,
                     IdVolunteer = id
                 };
                 _context.Volunteer_Pet.Add(volunteer_pet);
@@ -155,7 +156,7 @@ namespace Test2.Services
 
                 var petResponse = new PetResponse()
                 {
-                    IdPet = idPet
+                    IdPet = request.IdPet
                 };
                 return Ok(petResponse);
             }

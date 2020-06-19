@@ -1,5 +1,6 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
+using Test2.DTOs.Requests;
 using Test2.Services;
 
 namespace Test2.Controllers
@@ -31,11 +32,11 @@ namespace Test2.Controllers
         }
 
         [HttpPost("{id}/pets")]
-        public IActionResult AssignPet(int id, int idPet)
+        public IActionResult AssignPet(int id, PetRequest request)
         {
             try
             {
-                var result = _service.AssignPet(id, idPet);
+                var result = _service.AssignPet(id, request);
                 return Ok(result);
             }
             catch (Exception e)
